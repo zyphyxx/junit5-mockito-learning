@@ -1,4 +1,4 @@
-# Junit5 + Mockito-learning
+# Learning JUnit 5 + Mockito
 
 ✅ Java 17 LTS
 
