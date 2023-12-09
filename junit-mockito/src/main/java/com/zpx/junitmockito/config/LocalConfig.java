@@ -23,7 +23,7 @@ public class LocalConfig {
 
         repository.saveAll(List.of(u1, u2));
 
-        // You can return any object or null if you don't need to return anything
+
         return new Object();
     }
 }
