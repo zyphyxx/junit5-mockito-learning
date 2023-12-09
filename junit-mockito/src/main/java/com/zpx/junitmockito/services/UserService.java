@@ -2,6 +2,7 @@ package com.zpx.junitmockito.services;
 
 import com.zpx.junitmockito.entities.User;
 import com.zpx.junitmockito.repositories.UserRepository;
+import com.zpx.junitmockito.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,9 +14,8 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
-    public Optional<User> findById (Integer id) {
-        Optional<User> obj = userRepository.findById(id);
-        obj.orElseThrow(() -> new RuntimeException("user não encontrado"));
-        return obj;
+    public User findById(Integer id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new ObjectNotFoundException("objeto não encontrado"));
     }
 }

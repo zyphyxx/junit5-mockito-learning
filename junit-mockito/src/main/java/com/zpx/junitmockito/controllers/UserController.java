@@ -20,10 +20,10 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<Optional<User>> findById(@PathVariable Integer id) {
-        Optional<User> obj = userService.findById(id);
-        return ResponseEntity.ok().body(obj);
+    public ResponseEntity<User> findById(@PathVariable Integer id) {
+        return ResponseEntity.ok().body(userService.findById(id));
     }
+
 
 
 }
