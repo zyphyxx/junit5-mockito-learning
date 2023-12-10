@@ -7,4 +7,5 @@ import org.springframework.context.annotation.Profile;
 @Profile("local")
 public class LocalConfigH2 {
 
+
 }
