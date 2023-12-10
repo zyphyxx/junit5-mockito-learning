@@ -1,6 +1,6 @@
 package com.zpx.junitmockito.repositories;
 
-import com.zpx.junitmockito.entities.User;
+import com.zpx.junitmockito.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

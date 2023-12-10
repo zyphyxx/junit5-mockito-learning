@@ -1,6 +1,6 @@
 package com.zpx.junitmockito.config;
 
-import com.zpx.junitmockito.entities.User;
+import com.zpx.junitmockito.domain.User;
 import com.zpx.junitmockito.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

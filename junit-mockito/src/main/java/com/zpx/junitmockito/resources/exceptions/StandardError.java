@@ -1,4 +1,4 @@
-package com.zpx.junitmockito.controllers.exceptions;
+package com.zpx.junitmockito.resources.exceptions;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

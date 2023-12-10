@@ -1,4 +1,4 @@
-package com.zpx.junitmockito.entities.dto;
+package com.zpx.junitmockito.domain.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;

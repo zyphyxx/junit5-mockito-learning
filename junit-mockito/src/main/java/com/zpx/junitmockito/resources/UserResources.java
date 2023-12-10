@@ -1,8 +1,7 @@
-package com.zpx.junitmockito.controllers;
+package com.zpx.junitmockito.resources;
 
 
-import com.zpx.junitmockito.entities.User;
-import com.zpx.junitmockito.entities.dto.UserDTO;
+import com.zpx.junitmockito.domain.dto.UserDTO;
 import com.zpx.junitmockito.services.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,12 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class UserResources {
 
     @Autowired
     private ModelMapper mapper;

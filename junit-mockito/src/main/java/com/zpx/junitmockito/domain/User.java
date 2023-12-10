@@ -1,4 +1,4 @@
-package com.zpx.junitmockito.entities;
+package com.zpx.junitmockito.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

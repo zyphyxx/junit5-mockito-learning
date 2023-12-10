@@ -1,4 +1,4 @@
-package com.zpx.junitmockito.controllers.exceptions;
+package com.zpx.junitmockito.resources.exceptions;
 
 import com.zpx.junitmockito.services.exceptions.ObjectNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
