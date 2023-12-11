@@ -9,4 +9,6 @@ public interface UserService {
 
     List<User> findAllUser ();
     User createUser (UserDTO obj);
+
+    User findUserById ( Long id);
 }

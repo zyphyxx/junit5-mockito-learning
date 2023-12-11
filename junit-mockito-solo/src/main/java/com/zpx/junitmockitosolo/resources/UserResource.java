@@ -46,5 +46,11 @@ public class UserResource {
         return ResponseEntity.created(uri).body(newObj);
     }
 
+    @GetMapping(value = ID)
+    public ResponseEntity <User> findUserById(@PathVariable Long id) {
+        User obj = userService.findUserById(id);
+       return ResponseEntity.ok().body(obj);
+    }
+
 
 }
