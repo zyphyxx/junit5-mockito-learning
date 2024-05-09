@@ -8,16 +8,37 @@ class SimpleMathTest {
 
     @Test
     void sum() {
+
         SimpleMath simpleMath = new SimpleMath();
-        Double actual = simpleMath.sum(2D, 2D);
+        Double firstNumber = 2D;
+        Double secondNumber = 2D;
+
+        Double actual = simpleMath.sum(firstNumber, secondNumber);
         Double expected = 4D;
-        assertEquals(expected,actual,"O resultado esperado da soma não foi o encotrado");
+
+        assertEquals(expected,actual,
+                () -> firstNumber +" + "+secondNumber+" Não retornou o resultado esperado!"); // lazy assert messages
         assertNotEquals(5D,actual);
         assertNotNull(actual);
+
     }
 
     @Test
     void subtraction() {
+
+        SimpleMath simpleMath = new SimpleMath();
+        Double firstNumber = 10D;
+        Double secondNumber = 2D;
+
+        Double actual = simpleMath.subtraction(firstNumber,secondNumber);
+        Double expected = 8D;
+
+        assertNotNull(firstNumber);
+        assertNotNull(secondNumber);
+
+        assertEquals(expected,actual, () -> String.format("A Subtração entre %.2f - %.2f não resultou o resultado esperado",firstNumber,secondNumber));
+        assertNotEquals(4,expected);
+
     }
 
     @Test
