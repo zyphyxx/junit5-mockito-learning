@@ -93,8 +93,21 @@ class SimpleMathTest {
     }
 
     @Test
-    @Disabled("TODO: Nos precisamos trabalhar com a divisão")
+    @DisplayName("Test 10 / 2 = 5")
     void division() {
+
+        //given
+        Double firstNumber = 10D;
+        Double secondNumber = 2D;
+        Double expected = 5D;
+
+        //when
+        Double actual = math.division(firstNumber, secondNumber);
+
+        //then
+        assertNotNull(firstNumber);
+        assertEquals(expected, actual, () -> String.format("A divisão entre %.1f / %.1f não resultou no valor esperado",firstNumber,secondNumber));
+        assertNotEquals(6D,actual);
     }
 
     @Test
